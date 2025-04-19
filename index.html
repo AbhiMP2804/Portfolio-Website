@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishek Patwardhan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Abhishek Patwardhan</h1>
+      <ul>
+        <li><a href="#home">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
+      <!-- </ul> -->
+      <div class="theme-toggle">
+        <button id="themeSwitch" aria-label="Toggle Dark/Light Mode">🌙</button>
+      </div>
+    </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home-section">
+    <div class="profile-container">
+      <img src="assets/amp.jpg" alt="Abhishek Patwardhan" class="profile-img" />
+      <div class="intro-text-container">
+        <h1>Hi, I'm Abhishek 👋</h1>
+        <p class="intro-text">I'm a Graduate Research Assistant and MS Computer Science student at the University of Georgia (<span style="color: red;">GPA: 3.95/4.0</span>), with a passion for scalable systems, distributed computing, and machine learning. Skilled in Java, Python, Spring Boot, AWS, and React, with experience in full-stack and backend development. <br> 
+         </p>
+        
+        <!-- ✨ Added this line -->
+        <div class="ribbon-wrapper">
+          <div class="ribbon-expand">
+            <span>You can get in touch with me using below 👇</span>
+          </div>
+        </div>
+  
+        <div class="social-links" aria-label="Social links and contact methods">
+          <a href="mailto:abhimpat63@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+          <!-- <a href="tel:+17063635991"><i class="fas fa-phone"></i> Phone</a> -->
+          <a href="https://www.linkedin.com/in/abhimpat/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/AbhiMP2804" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+  
+        <a href="assets/Abhishek Milind_Patwardhan_Resume.pdf" class="btn" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+  
+  <section id="experience" class="experience-section">
+    <h2>Work Experience</h2>
+    <div class="experience-container">
+      
+      <!-- Year Buttons -->
+      <div class="year-selector">
+        <button onclick="filterExperience('2025')">2025 - Present</button>
+        <button onclick="filterExperience('2022')">2022</button>
+      </div>
+  
+      <!-- Experience Timeline -->
+      <div class="timeline-container">
+        <div class="timeline timeline-2025" data-year="2025">
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <h3>Graduate Research Assistant – UGA</h3>
+              <p><strong>March 2025 – Present</strong></p>
+              <ul>
+                <li>Increased user engagement by developing a responsive UI with HTML, CSS, JavaScript, and Django templates.</li>
+                <li>Optimized training logic for the NCDM model, reducing overall training time by 50% and memory usage by 30%.</li>
+                <li>Enhanced personalized learning by 30%, generating adaptive study recommendations through the NCDM ML model.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="timeline timeline-2022" data-year="2022">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h3>Software Developer Intern – The Sparks Foundation</h3>
+              <p><strong>Jan 2022 – Feb 2022</strong></p>
+              <ul>
+                <li>Refactored & indexed 20+ SQL queries in Oracle, reducing query execution time by 40%.</li>
+                <li>Integrated Docker and GitHub Actions, reducing CI/CD release cycles by 35%.</li>
+                <li>Implemented Agile best practices using JIRA, reducing feature delivery time by 30%.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    
+
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">Top Projects</h2>
+    <div class="project-cards">
+      <div class="card" style="background-image: url('assets/stopbyshow.png')">
+        <h1>🎬 StopByShow : Movie Booking System</h1>
+        <b><p>Built a scalable Spring Boot application for real-time movie bookings, automated scheduling, and moderated user reviews.</p></b>
+        <a href="https://github.com/AbhiMP2804/StopByShow---Final-Code" target="_blank">🔗 GitHub</a>
+      </div>
+      <div class="card" style="background-image: url('assets/Distributed\ Hashing.png')">
+        <h1>🧩 Distributed Hashing System</h1>
+        <b><p>Designed a consistent hashing-based key-value store with fault-tolerant nodes and sub-10ms data retrieval.</p></b>
+        <a href="https://github.com/AbhiMP2804/DCS-Project4" target="_blank">🔗 GitHub</a>
+      </div>
+      <div class="card" style="background-image: url('assets/DIS1.jpg')">
+        <h1>♿ This-Abled: an aid to get paid</h1>
+        <b><p>Developed an accessible e-learning and job-matching platform using AI-driven facial login and voice-based navigation.</p></b>
+        <a href="https://github.com/AbhiMP2804/This-Abled_An-aid-to-get-paid" target="_blank">🔗 GitHub</a>
+      </div>
+    </div>
+  
+    <div id="moreProjects" class="project-cards hidden fade">
+      <div class="card" style="background-image: url('assets/BLC.png')">
+        <h1>⛓️ CleanCoin - Blockchain based web application for recycling waste</h1>
+        <b><p>Engineered a transparent recycling reward system with smart contracts on Ethereum and Flask-based web dashboard.</p></b>
+        <a href="https://github.com/AbhiMP2804/CleanCoin_Blockchain-based-web-application-for-recycling-waste" target="_blank">🔗 GitHub</a>
+      </div>
+      <div class="card" style="background-image: url('assets/BT.jpg')">
+        <h1>🧠 Brain Tumor Detection</h1>
+        <b><p>Implemented CNN-based brain tumor classifier with 98% accuracy using MRI scans and TensorFlow automation.</p></b>
+        <a href="https://github.com/AbhiMP2804/Brain-Tumor-Detection--TE-Project" target="_blank">🔗 GitHub</a>
+      </div>
+      <div class="card" style="background-image: url('assets/Connectify.png')">
+        <h1>💬 Connectify - Persistent and Asynchronous Multicast System</h1>
+        <b><p>Built a real-time group messaging system with persistent delivery, dynamic node joins, and failure recovery logic.</p></b>
+        <a href="https://github.com/AbhiMP2804/Connectify-Persistent-and-Asynchronous-Multicast-System" target="_blank">🔗 GitHub</a>
+      </div>
+    </div>
+  
+    <button id="showMoreBtn">Show More</button>
+  </section>
+  
+  
+
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+  
+    <div class="skills-container">
+      
+      <!-- Category 1: Languages -->
+      <div class="skill-category">
+        <h3>Languages</h3>
+        <div class="skill-grid">
+          <div class="skill-card">Java (Proficient)</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">C</div>
+          <div class="skill-card">C++</div>
+          <div class="skill-card">SQL</div>
+        </div>
+      </div>
+  
+      <!-- Category 2: Distributed Systems & Cloud -->
+      <div class="skill-category">
+        <h3>Distributed Systems & Cloud</h3>
+        <div class="skill-grid">
+          <div class="skill-card">Hadoop </div>
+          <div class="skill-card">Apache Kafka</div>
+          <div class="skill-card">AWS (EC2, S3, Lambda, RDS)</div>
+        </div>
+      </div>
+  
+      <!-- Category 3: Databases -->
+      <div class="skill-category">
+        <h3>Database Management</h3>
+        <div class="skill-grid">
+          <div class="skill-card">MySQL</div>
+          <div class="skill-card">PostgreSQL</div>
+          <div class="skill-card">Oracle</div>
+          <div class="skill-card">phpMyAdmin</div>
+          <div class="skill-card">Redis</div>
+        </div>
+      </div>
+
+      <!-- Category 4: Full-Stack Development -->
+      <div class="skill-category">
+        <h3>Full-Stack Development</h3>
+        <div class="skill-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">Bootstrap</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">React</div>
+          <div class="skill-card">PHP</div>
+          <div class="skill-card">Spring Boot</div>
+          <div class="skill-card">Django</div>
+          <div class="skill-card">Flask</div>
+          <div class="skill-card">Rest API</div>
+          <div class="skill-card">Hibernate</div>
+        </div>
+      </div>
+
+
+      <!-- Category 5: DevOps, Testing & Version Control -->
+      <div class="skill-category">
+        <h3>DevOps, Testing & Version Control</h3>
+        <div class="skill-grid">
+          <div class="skill-card">CI/CD Pipelines</div>
+          <div class="skill-card">Git</div>
+          <div class="skill-card">JUnit</div>
+          <div class="skill-card">Postman</div>
+          <div class="skill-card">Maven</div>
+          <div class="skill-card">Gradle</div>
+          <div class="skill-card">GitHub</div>
+          <div class="skill-card">JMeter</div>
+        </div>
+      </div>
+  
+      <!-- Category 6: Software Tools -->
+      <div class="skill-category">
+        <h3>Software Tools</h3>
+        <div class="skill-grid">
+          <div class="skill-card">Docker</div>
+          <div class="skill-card">Jira</div>
+          <div class="skill-card">IntelliJ IDEA</div>
+          <div class="skill-card">VS Code</div>
+          <div class="skill-card">Eclipse</div>
+          <div class="skill-card">PyCharm</div>
+          <div class="skill-card">Microsoft Excel</div>
+          <div class="skill-card">Power BI</div>
+          <div class="skill-card">Tableau</div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <section id="certifications" class="certifications-section">
+    <h2>Certifications & Publication</h2>
+    
+    <div class="cert-carousel">
+      <button class="carousel-btn left" onclick="prevCert()">&#10094;</button>
+      
+      <div class="cert-image-container">
+        <h3><p id="certTitle">Java</p></h3>
+        <img id="certificateImage" src="assets/java.png" alt="Certificate">
+        
+      </div>
+      
+      <button class="carousel-btn right" onclick="nextCert()">&#10095;</button>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Abhishek Patwardhan. All rights reserved.</p>
+  </footer>
+</body>
+</html>
